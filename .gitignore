@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.env
+
+# Model file (large binary)
+*.pkl
+
+# Data files (personal usage data)
+yearly_data/
+*.csv
+
+# Virtual environment
+venv/
+env/
+.venv/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.suo
+*.user
+
+# Arduino compiled files
+*.elf
+*.bin
+*.hex
+build/
