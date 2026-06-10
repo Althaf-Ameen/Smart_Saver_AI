@@ -10,6 +10,7 @@ Technology, under APJ Abdul Kalam Technological University, Kerala.
 
 ## Project Structure
 
+```
 SmartSaver/
 │
 ├── Phase 1/
@@ -26,6 +27,8 @@ SmartSaver/
 ├── README.md
 ├── requirements.txt
 └── LICENSE
+
+```
 
 ---
 
@@ -49,36 +52,44 @@ SmartSaver/
 1. Clone this repository
 
 2. Install dependencies:
-   - pip install -r requirements.txt
+
+```
+pip install -r requirements.txt
+```
 
 3. Open `Smart_Saver_UI.py` and configure:
-   - `ACCOUNT_SID` — your Twilio Account SID
-   - `AUTH_TOKEN` — your Twilio Auth Token
-   - `TWILIO_PHONE` — your Twilio phone number
-   - `USER_PHONES` — recipient phone numbers
-   - `ESP32_URL` — your ESP32's IP address
-   - `Tariff` — your local electricity tariff (cost per kWh)
+- `ACCOUNT_SID` — your Twilio Account SID
+- `AUTH_TOKEN` — your Twilio Auth Token
+- `TWILIO_PHONE` — your Twilio phone number
+- `USER_PHONES` — recipient phone numbers
+- `ESP32_URL` — your ESP32's IP address
+- `Tariff` — your local electricity tariff (cost per kWh)
 
 4. Train the model first:
-   - python Train_Model.py
+```
+python Train_Model.py
+```
 
 5. Place the generated `bill_predictor_model.pkl` in the same folder as `Smart_Saver_UI.py`
 
 6. Update `MODEL_PATH` in `Smart_Saver_UI.py`:
-```python
+```
    MODEL_PATH = "bill_predictor_model.pkl"
 ```
 
 7. Run the app:
-- python Smart_Saver_UI.py
-
+```
+python Smart_Saver_UI.py
+```
 
 ### ESP32 Firmware
 1. Open `sketch_feb16a.ino` in Arduino IDE
+
 2. Configure:
-   - `ssid` — your WiFi name
-   - `password` — your WiFi password
-   - Static IP settings to match your network
+- `ssid` — your WiFi name
+- `password` — your WiFi password
+- Static IP settings to match your network
+
 3. Flash to your ESP32
 
 ---
