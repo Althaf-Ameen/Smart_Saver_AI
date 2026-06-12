@@ -1,3 +1,4 @@
+![Smart Saver Banner](Smart_Saver.png)
 # SmartSaver - Smart Electricity Monitoring and Forecasting System
 
 A IoT + Machine Learning based electricity monitoring and bill forecasting 
